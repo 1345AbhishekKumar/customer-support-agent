@@ -5,12 +5,30 @@ build/
 dist/
 wheels/
 *.egg-info
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
 
 # Virtual environments
-.venv
+.venv/
 
+# Environment & Secrets
 .env
-credentials.json
+.env.*
+!.env.example
+credential*.json
+client_secret*.json
+
+# Node / Frontend build outputs
 node_modules/
 dashboard/dist/
-credentials.json
+
+# IDE & OS files
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# Agent skills tooling
+.agents/
+skills-lock.json
